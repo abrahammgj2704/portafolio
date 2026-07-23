@@ -1,0 +1,15 @@
+Historial Completo de Prompts Utilizados en esta Conversación:
+
+Prompt 1:
+Necesito realizar este proyecto de la siguiente manera:
+Actua como tutor de frontend y dame el codigo en tres archivos raices: HTML, CSS y JavaScript 
+Sin React, Vue, Angular, Tailwind ni Bootstrap
+SIn Frameworks ni CDNs de UI
+
+Prompt 2:
+Ahora coloca los tres archivos ordenados en el mismo codigo
+
+Prompt 3:
+Enviame los codigos de los tres archivos ordenados para poder crear la app del blog, de modo que pueda pegarlo en un archivo .txt 
+
+

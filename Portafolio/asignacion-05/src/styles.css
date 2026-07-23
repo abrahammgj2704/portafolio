@@ -1,0 +1,148 @@
+/* products-app-fragile · styles */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0f1117;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: #1a1d2e;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #2d3147;
+}
+
+.app-header h1 { font-size: 1.15rem; font-weight: 700; }
+
+.app-header input {
+  flex: 1;
+  background: #0f1117;
+  border: 1px solid #2d3147;
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  background: #1a1d2e;
+  border: 1px solid #2d3147;
+  border-radius: 10px;
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.product-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  background: #0f1117;
+  border-radius: 6px;
+}
+
+.product-card h3 { font-size: 0.85rem; font-weight: 600; color: #e2e8f0; }
+.price { font-size: 0.9rem; font-weight: 700; color: #a78bfa; }
+
+.btn-fav {
+  background: transparent;
+  border: 1px solid #2d3147;
+  border-radius: 6px;
+  padding: 0.35rem 0.65rem;
+  color: #94a3b8;
+  font-size: 0.78rem;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.btn-fav.active { border-color: #f59e0b; color: #f59e0b; }
+
+.subscribe-section {
+  background: #1a1d2e;
+  border: 1px solid #2d3147;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.subscribe-section h2 { font-size: 1rem; margin-bottom: 0.75rem; }
+
+.subscribe-section form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+.subscribe-section input {
+  flex: 1;
+  background: #0f1117;
+  border: 1px solid #2d3147;
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  outline: none;
+  min-width: 200px;
+}
+
+.subscribe-section button {
+  background: #a78bfa;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:disabled,
+.subscribe-section button:disabled {
+  background: #4c1d95;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.state-message {
+  background: #111827;
+  border: 1px solid #334155;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #f8fafc;
+}
+
+.error-state { background: #7f1d1d; border-color: #7f1d1d; }
+.loading-state { background: #1e3a8a; border-color: #1e40af; }
+.empty-state { background: #0f172a; border-color: #334155; }
+
+.form-error {
+  color: #fecaca;
+  margin-top: 0.65rem;
+  font-size: 0.85rem;
+}
+
+.form-success {
+  color: #86efac;
+  margin-top: 0.65rem;
+  font-size: 0.85rem;
+}
